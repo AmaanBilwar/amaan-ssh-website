@@ -50,6 +50,7 @@ impl App {
             Box::new(crate::pages::experience::Experience::new()),
             Box::new(crate::pages::projects::Projects::new()),
             Box::new(crate::pages::leadership::Leadership::new()),
+            Box::new(crate::pages::oss::Oss::new()),
         ];
 
         Self {

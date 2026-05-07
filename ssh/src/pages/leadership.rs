@@ -34,28 +34,44 @@ impl Leadership {
     pub fn new() -> Self {
         let experiences = vec![
             ExperienceItem {
-                role: "ceo",
-                affiliation: "filipino americans in tech",
-                time: "(oct 2024-present)",
+                role: "founder & ceo",
+                affiliation: "scene ai",
+                time: "(april 2025-present)",
                 description: vec![
-                    "building a community of filipino tech professionals to help make tech more accessible for filipinos. currently at 268 members",
-                    "",
-                    "notable highlights:",
-                    "- collaborated amazon, dreamhaven, and aapi in gaming",
-                    "- organized a hackathon to help filipino businesses that was sponsored by vercel, warp, and sorce (yc f25)",
+                    "building ai-powered solutions for scene understanding and computer vision applications",
                 ],
             },
             ExperienceItem {
-                role: "coo",
-                affiliation: "wecracked",
-                time: "(may 2024-jul 2024)",
+                role: "founder & ceo",
+                affiliation: "soar ai labs",
+                time: "(sept 2025-present)",
                 description: vec![
-                    "built a 6,000+ member hackathon community",
-                    "",
-                    "notable highlights:",
-                    "- secured $2k in sponsorship backing from koyeb and tensordock",
+                    "leading ai research and development lab focused on cutting-edge machine learning solutions",
                 ],
             },
+            ExperienceItem {
+                role: "web lead",
+                affiliation: "revolutionuc",
+                time: "(may 2025-april 2025)",
+                description: vec![
+                    "leading the web development team for cincinnati's premier hackathon",
+                    "",
+                    "notable highlights:",
+                    "- managing website and platform infrastructure for 200+ participants",
+                ],
+            },
+            ExperienceItem {
+                role: "daq creator & lead",
+                affiliation: "bearcats electric racing",
+                time: "(aug 2024-may 2025)",
+                description: vec![
+                    "created and led the data acquisition system for the ev3 formula electric vehicle",
+                    "",
+                    "notable highlights:",
+                    "- designed custom data acquisition architecture for vehicle telemetry",
+                    "- 2025 season competition team",
+                ]
+            }
         ];
 
         Self {

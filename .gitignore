@@ -4,3 +4,5 @@ ssh/authorized_keys
 */.DS_Store
 web/blog
 web/assets
+config.bat
+node_modules

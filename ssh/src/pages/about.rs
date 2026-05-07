@@ -60,19 +60,19 @@ impl<'a> Page for About<'a> {
 
         let line_1 = line_from_spans(vec![
             gray_span("hey! my name is "),
-            white_span("kieran llarena"),
+            white_span("amaan bilwar"),
         ]);
 
         let line_2 = line_from_spans(vec![
             gray_span("im currently studying "),
-            white_span("computer science "),
+            white_span("computer engineering "),
             gray_span("at the "),
-            white_span("university of michigan-dearborn"),
+            white_span("university of cincinnati"),
         ]);
 
         let line_3 = line_from_spans(vec![
             gray_span("my expected graduation date is "),
-            white_span("may 2027"),
+            white_span("april 2027"),
         ]);
 
         let line_4 = line_from_spans(vec![
@@ -84,17 +84,25 @@ impl<'a> Page for About<'a> {
 
         let line_5 = line_from_spans(vec![
             gray_span("my background is rooted in "),
-            white_span("web and mobile fullstack development"),
+            white_span("low-level and perfomant systems + web dev"),
             gray_span(", all "),
             white_span("self-taught"),
             gray_span(" through research, experimentation, and project work"),
         ]);
 
         let line_6 = line_from_spans(vec![
-            gray_span("im currently exploring "),
-            white_span("systems programming"),
-            gray_span(", specifically working with "),
-            white_span("embedded rust on microcontrollers"),
+            gray_span("always pondering: "),
+            white_span("building tools where agents talk to other agents"),
+        ]);
+
+        let line_7 = line_from_spans(vec![
+            gray_span("hot take: "),
+            white_span("llms arent allat"),
+        ]);
+
+        let line_8 = line_from_spans(vec![
+            gray_span("when not coding: "),
+            white_span("dancing or listening to music"),
         ]);
 
         let mut links: Vec<Line<'_>> = (0..(self.links.len()))
@@ -138,6 +146,10 @@ impl<'a> Page for About<'a> {
             line_5,
             Line::from(""),
             line_6,
+            Line::from(""),
+            line_7,
+            Line::from(""),
+            line_8,
             Line::from(""),
             Line::from(white_span("contact:")),
         ];
@@ -238,20 +250,20 @@ impl<'a> About<'a> {
     pub fn new(show_debug_frames: bool) -> Self {
         let links: Vec<ContactLink> = vec![
             ContactLink {
-                display_text: "twitter",
-                link: "x.com/krayondev",
-            },
-            ContactLink {
-                display_text: "linkedin",
-                link: "linkedin.com/in/kllarena07",
+                display_text: "email",
+                link: "bilwarad@mail.uc.edu",
             },
             ContactLink {
                 display_text: "github",
-                link: "github.com/kllarena07",
+                link: "github.com/amaanbilwar",
             },
             ContactLink {
-                display_text: "email",
-                link: "kieran.llarena@gmail.com",
+                display_text: "linkedin",
+                link: "linkedin.com/in/amaanbilwar",
+            },
+            ContactLink {
+                display_text: "website",
+                link: "amaandoes.tech",
             },
         ];
 
